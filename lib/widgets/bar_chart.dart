@@ -46,10 +46,36 @@ class BarChart extends StatelessWidget {
         ),
         const SizedBox(height: 30),
         Row(
+          // as barras e todas dados depende do dados dinamico, isso é apenas um exemplo
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-
+            for(int i=30; i<maxBarHeight; i += 30)
+            Column(
+              children: [
+                Text(
+                  "R\$$i",
+                  style: TextStyle(fontWeight: FontWeight.w600),
+                ),
+                const SizedBox(height: 6),
+                Container(
+                  height: i.toDouble(),
+                  width: 18,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                ),
+                const SizedBox(height: 6),
+                const Text(
+                  "Ter",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            )
           ],
         )
       ],
