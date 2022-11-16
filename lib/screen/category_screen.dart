@@ -1,3 +1,4 @@
+import 'package:bugettracker/widgets/radial_painter.dart';
 import 'package:flutter/material.dart';
 
 class CategoryScreen extends StatefulWidget {
@@ -48,7 +49,12 @@ class _CategoryScreenState extends State<CategoryScreen> {
                   )
                 ]),
             child: CustomPaint(
-              //foregroundPainter: RadialPainte(),
+              foregroundPainter: RadialPainter(
+                bgColor: Colors.grey[200],
+                lineColor: Colors.green,
+                percent: radialBarPercent,
+                widget: 15,
+              ),
               child: Center(
                 child: Text(
                   "R\$${SpeedAmout} / R\$${TotalBudget}",
@@ -60,6 +66,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
               ),
             ),
           ),
+          for(int i = 50; i < 300; i += 65)
           Container(
             alignment: Alignment.center,
             margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -78,10 +85,19 @@ class _CategoryScreenState extends State<CategoryScreen> {
             child: Padding(
               padding: const EdgeInsets.all(30),
               child: Row(
-                children: const [
-                  Text(
-                    "Item",
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    "Item 1",
                     style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "R\$ ${i.toString()}",
+                    style: const TextStyle(
+                      color: Colors.red,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
