@@ -1,3 +1,4 @@
+import 'package:bugettracker/screen/category_screen.dart';
 import 'package:flutter/material.dart';
 
 class CategoryWidget extends StatelessWidget {
@@ -7,9 +8,15 @@ class CategoryWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        for(int i=0; i<5; i++)
         GestureDetector(
           onTap: () {
-            //Navigator.push(context, MaterialPageRoute(builder: CategoryPage()))
+            Navigator.push(context, 
+              // Move para Category
+              MaterialPageRoute(builder:  (_) {
+                return const CategoryScreen();
+              }
+             ));
           },
           child: Container(
             margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -58,6 +65,7 @@ class CategoryWidget extends StatelessWidget {
                         borderRadius: BorderRadius.circular(15),
                       ),
                     ),
+                    // Bars depende para funcionar dos dados dinamicos, esté está simples e estatico.
                     Container(
                       height: 20,
                       width: 150,
