@@ -1,4 +1,5 @@
 import 'package:bugettracker/widgets/bar_chart.dart';
+import 'package:bugettracker/widgets/category_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -59,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: const BarChart(),
                   );
                 } else {
-                  return Container();
+                  return const CategoryWidget();
                 }
               }
             ),

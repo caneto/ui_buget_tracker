@@ -55,7 +55,7 @@ class BarChart extends StatelessWidget {
               children: [
                 Text(
                   "R\$$i",
-                  style: TextStyle(fontWeight: FontWeight.w600),
+                  style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 6),
                 Container(
