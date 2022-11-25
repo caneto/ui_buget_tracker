@@ -8,16 +8,16 @@ Este é uma ui Budget Tracker usando os conhecimentos adquiridos da Academia do 
 <table> 
   <tr>
     <td> 
-      <img width="250" src="https://github.com/caneto/calculator-app/blob/main/screenshots/foto_calculadora.png"/> 
+      <img width="250" src="https://github.com/caneto/ui_buget_tracker/blob/main/screenshot/Screenshot1.png"/> 
     </td>
     <td>
-      <img width="250" src="https://github.com/caneto/calculator-app/blob/main/screenshots/foto_calculadora1.png"/> 
+      <img width="250" src="https://github.com/caneto/ui_buget_tracker/blob/main/screenshot/Screenshot2.png"/> 
     </td>
     <td> 
-      <img width="250" src="https://github.com/caneto/calculator-app/blob/main/screenshots/foto_calculadora2.png"/> 
+      <img width="250" src="https://github.com/caneto/ui_buget_tracker/blob/main/screenshot/Screenshot3.png"/> 
     </td>
   </tr>
-  
+</table>  
  
 <h2>📝 Licença</h2>
 
