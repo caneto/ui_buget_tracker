@@ -1,6 +1,6 @@
 # caneto
 
-Este é uma ui Bugget Tracker usando os conhecimentos adquiridos da Academia do Flutter .
+Este é uma ui Budget Tracker usando os conhecimentos adquiridos da Academia do Flutter.
 
 
 ## Screenshots
